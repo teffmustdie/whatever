@@ -38,6 +38,7 @@ header {
 }
 .card {
   margin-left: 10px !important;
+  height: 500px;
 }
 .card-image {
   height: 400px;
