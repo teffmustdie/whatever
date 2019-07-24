@@ -8,42 +8,61 @@ body {
 header { 
   font-family: 'Poppins', sans-serif;
   background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  text-shadow: 1px 1px 5px #761288;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   flex-direction: column;
-  position: fixed;
   top: 0%;
   width: 100%;
   z-index: 100;
+  cursor: default;
 }
 .title {
-  font-size: 30px;
+  font-size: 50px;
 }
 .subtitle {
-  font-size: 25px;
+  font-size: 35px;
   object-fit: contain;
 }
-.background {
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d477ff;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 40px;
+  text-shadow: 1px 1px 5px #761288;
+  height: 150px;
   width: 100%;
-  height: 100%;
+  cursor: default;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.presentation:hover {
+  background-color: #ff86b9;
+  transition-duration: 0.9s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .main-container {
   padding-top: 100px;
-  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-content: space-around !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  background-image: url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .card {
-  margin-left: 10px !important;
+  margin: 10px !important;
   height: 500px;
+  width: 400px;
 }
 .card-image {
   height: 400px;
-  width: 400px;
+  width: 100%;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -59,7 +78,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: right !important;
+  justify-content: space-between;
   justify-items: right;
 }
 .fa {

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
     <title>Whatever</title>
 </head>
 
@@ -20,10 +22,17 @@
         <p class="subtitle">La Plata</p>
         <i class="material-icons">flash_on</i>
     </header>
+    <div class="presentation">
+        <span>Remeras variadas al mejor precio</span>
+        <span>Entregas en distintos puntos de La Plata</span>
+
+    </div>
     <div class="main-container">
         <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
+            <div class="card-image waves-effect waves-block waves-light js-flickity"
+                data-flickity-options='{ "cellAlign": "left", "contain": true }'>
                 <img class="activator" src="./images/acdc.jpg">
+                <img class="activator" src="./images/acdc2.jpg">
             </div>
             <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">AC/DC<i
@@ -36,7 +45,8 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
+            <div class="card-image waves-effect waves-block waves-light js-flickity"
+                data-flickity-options='{ "cellAlign": "left", "contain": true }'>
                 <img class="activator" src="./images/choker.jpg">
             </div>
             <div class="card-content">
@@ -50,7 +60,8 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
+            <div class="card-image waves-effect waves-block waves-light js-flickity"
+                data-flickity-options='{ "cellAlign": "left", "contain": true }'>
                 <img class="activator" src="./images/gris y negro.jpg">
             </div>
             <div class="card-content">
@@ -65,17 +76,17 @@
                 <p>**Talles únicos.</p>
             </div>
         </div>
-
+    </div>
     </div>
     </div>
     <footer>
         <div class="footer">
             <a href="http://www.instagram.com/whatevertshirtslp" class="fa fa-instagram"></a>
-            <span>Follow me</span>
             <span class="copyright">2019©</span>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
